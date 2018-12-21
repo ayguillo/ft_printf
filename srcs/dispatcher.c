@@ -6,7 +6,7 @@
 /*   By: tcherret <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/11 12:07:39 by tcherret          #+#    #+#             */
-/*   Updated: 2018/12/21 14:03:57 by ayguillo         ###   ########.fr       */
+/*   Updated: 2018/12/21 14:19:30 by ayguillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int		dispatcher(va_list ap, int i, const char *f)
 	else if (f[i] == 'u')
 		return (ft_print_unsign(ap, flag));
 	else if (f[i] == 'x')
-		return (ft_print_uhex(ap, f, t, flag));
+		return (ft_print_uhex(ap, flag));
 	else if (f[i] == 'X')
 		return (ft_print_uhexmaj(ap, flag));
 	else if (f[i] == 'f')
